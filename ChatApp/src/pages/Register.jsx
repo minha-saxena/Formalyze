@@ -20,11 +20,9 @@ const Register = () => {
         const file = e.target[3].files[0];
 
         try{
-            //create user
+          
             const res = await createUserWithEmailAndPassword(auth , email,password);
             console.log(res);
-
-            //skip the image task
             await updateProfile(res.user, {
                 displayName,
             });
@@ -37,7 +35,7 @@ const Register = () => {
             await setDoc(doc(db,"userChats",res.user.uid),{});
 
             onAuthStateChanged(auth, (user) => {
-                console.log("Updated user:", user); // Confirm displayName is available
+                console.log("Updated user:", user); 
             });
     
 
