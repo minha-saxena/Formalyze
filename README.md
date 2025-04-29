@@ -7,12 +7,19 @@ Formalyze is an AI-driven chat application built with Firebase for real-time dat
 ## ✨ Features
 
 -Real-time Chat: Firebase’s real-time database enables instant messaging and updates.
+
 -LSTM Model: Detects informal language in chats and encourages professional communication.
+
 -High Accuracy:
+
   -Accuracy: 96.71%
+  
   -Precision: 97%
+  
   -Recall: 96%
+  
 -User Authentication: Uses Firebase Authentication to securely manage user logins and registrations.
+
 -Message Moderation: Flags informal language in messages to maintain professionalism.
 
 ## 🛠️ Tech Stack
