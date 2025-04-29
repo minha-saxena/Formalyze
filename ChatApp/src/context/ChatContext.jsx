@@ -1,14 +1,11 @@
 import { createContext, useContext, useReducer } from "react";
 import { AuthContext } from "./AuthContext";
-import { Navigate } from "react-router-dom"; // Import Navigate for redirection
+import { Navigate } from "react-router-dom"; 
 
 export const ChatContext = createContext();
 
 export const ChatContextProvider = ({ children }) => {
   const { currentUser } =useContext(AuthContext);
-
-  // If no user is logged in, redirect to the register page
-  
 
   const INITIAL_STATE = {
     chatId: "null",
