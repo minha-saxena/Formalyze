@@ -5,7 +5,7 @@ import { doc, onSnapshot } from 'firebase/firestore';
 import { db } from '../firebase';
 
 const Messages = () => {
-    const [messages, setMessages] = useState([]); // Initialize as an empty array
+    const [messages, setMessages] = useState([]); 
     const { data } = useContext(ChatContext);
 
     useEffect(() => {
@@ -14,16 +14,16 @@ const Messages = () => {
 
         const unsub = onSnapshot(doc(db, "chats", data.chatId), (doc) => {
             if (doc.exists()) {
-                setMessages(doc.data().messages || []); // Ensure messages is always an array
+                setMessages(doc.data().messages || []); 
             } else {
-                setMessages([]); // Fallback if the document doesn't exist
+                setMessages([]); 
             }
         });
 
         return () => {
             unsub();
         };
-    }, [data?.chatId]); // Safely access `data.chatId`
+    }, [data?.chatId]); 
 
     return (
         <div className="messages">
