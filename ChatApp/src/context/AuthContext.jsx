@@ -1,25 +1,25 @@
 import { onAuthStateChanged } from "firebase/auth";
 import { createContext, useEffect, useState } from "react";
-import { auth } from "../firebase"; // Make sure you have initialized Firebase correctly
+import { auth } from "../firebase"; 
 
 export const AuthContext = createContext();
 
 export const AuthContextProvider = ({ children }) => {
   const [currentUser, setCurrentUser] = useState(null);
-  const [loading, setLoading] = useState(true); // Add loading state
-
+  const [loading, setLoading] = useState(true); 
+  
   useEffect(() => {
     const unsub = onAuthStateChanged(auth, (user) => {
       setCurrentUser(user);
-      setLoading(false); // Set loading to false after user authentication is checked
+      setLoading(false); 
     });
 
-    return () => unsub(); // Ensure proper cleanup when component unmounts
+    return () => unsub(); 
   }, []);
 
-  // While loading the authentication status, show a loading spinner or message
+
   if (loading) {
-    return <div>Loading...</div>; // Or replace with a loading spinner or component
+    return <div>Loading...</div>; 
   }
 
   return (
