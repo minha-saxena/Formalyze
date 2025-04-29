@@ -6,40 +6,40 @@ Formalyze is an AI-driven chat application built with Firebase for real-time dat
 
 ## ✨ Features
 
--Real-time Chat: Firebase’s real-time database enables instant messaging and updates.
+- Real-time Chat: Firebase’s real-time database enables instant messaging and updates.
 
--LSTM Model: Detects informal language in chats and encourages professional communication.
+- LSTM Model: Detects informal language in chats and encourages professional communication.
 
--High Accuracy:
+- High Accuracy:
 
-  ->Accuracy: 96.71%
+  - Accuracy: 96.71%
   
-  ->Precision: 97%
+  - Precision: 97%
   
-  ->Recall: 96%
+  - Recall: 96%
   
--User Authentication: Uses Firebase Authentication to securely manage user logins and registrations.
+- User Authentication: Uses Firebase Authentication to securely manage user logins and registrations.
 
--Message Moderation: Flags informal language in messages to maintain professionalism.
+- Message Moderation: Flags informal language in messages to maintain professionalism.
 
 ## 🛠️ Tech Stack
 
--Frontend: React.js, Tailwind CSS
+- Frontend: React.js, Tailwind CSS
 
--Backend: Firebase (Real-time Database, Authentication)
+- Backend: Firebase (Real-time Database, Authentication)
 
--AI/Model: LSTM (Long Short-Term Memory) for language classification
+- AI/Model: LSTM (Long Short-Term Memory) for language classification
 
--Libraries/Frameworks: Firebase SDK, TensorFlow, Scikit-learn
+- Libraries/Frameworks: Firebase SDK, TensorFlow, Scikit-learn
 
-🚀 How to Use
+## 🚀 How to Use
 
 1. Clone the Repository
 2. Install the Required Packages
 3. Set up Firebase
-  -Go to the Firebase Console and create a new Firebase project.
-  -Enable Firebase Authentication and Firebase Realtime Database in the console.
-  -Obtain your Firebase credentials (API key, project ID, etc.) and configure them in your project.
+  - Go to the Firebase Console and create a new Firebase project.
+  - Enable Firebase Authentication and Firebase Realtime Database in the console.
+  - Obtain your Firebase credentials (API key, project ID, etc.) and configure them in your project.
 4. Run the Application
 5. User Authentication
   Login: Use Firebase Authentication to log in with your email and password.
@@ -52,8 +52,8 @@ Formalyze is an AI-driven chat application built with Firebase for real-time dat
 
 ## 🔮 Future Improvements
 
--Expand the LSTM model to detect different types of informal language (e.g., slang, abbreviations).
+- Expand the LSTM model to detect different types of informal language (e.g., slang, abbreviations).
 
--Implement additional notification features to alert users of informal language.
+- Implement additional notification features to alert users of informal language.
 
--Create a mobile version of the application using React Native.
+- Create a mobile version of the application using React Native.
