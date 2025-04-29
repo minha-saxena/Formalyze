@@ -64,24 +64,18 @@ test_sentences = [
 
 X_test = get_numerical_test_data(lst_reddit_sentences, lst_brown_sentences, test_sentences, pickle_path)
 
-# get the word vectors first
 sentence_word_vectors = get_word_vectors(model, X_test)
 
-# all the word changing stuff
 word_vector_input = model.layers[1].input
 
-# get all of the scores for the formal sentence, want to maximize these
 model_output_pair = model.layers[-1].output
 formality_score_output = tf.gather(model_output_pair, 1, axis=1)
 
-# calculate the gradient of the word vector to change while trying to maximize
-# the formality of the entire sentence
 formality_maximize_loss = K.sum(formality_score_output)
 word_vector_gradients = K.gradients(formality_maximize_loss, word_vector_input)[0]
 
 calculate_word_gradients = K.function([word_vector_input], [word_vector_gradients])
 
-# continuously update the word vector
 learning_rate = 10000
 word_index = 5
 for i in range(0, 30):
