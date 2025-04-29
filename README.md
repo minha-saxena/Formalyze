@@ -12,11 +12,11 @@ Formalyze is an AI-driven chat application built with Firebase for real-time dat
 
 -High Accuracy:
 
-  -Accuracy: 96.71%
+  ->Accuracy: 96.71%
   
-  -Precision: 97%
+  ->Precision: 97%
   
-  -Recall: 96%
+  ->Recall: 96%
   
 -User Authentication: Uses Firebase Authentication to securely manage user logins and registrations.
 
@@ -25,8 +25,11 @@ Formalyze is an AI-driven chat application built with Firebase for real-time dat
 ## 🛠️ Tech Stack
 
 -Frontend: React.js, Tailwind CSS
+
 -Backend: Firebase (Real-time Database, Authentication)
+
 -AI/Model: LSTM (Long Short-Term Memory) for language classification
+
 -Libraries/Frameworks: Firebase SDK, TensorFlow, Scikit-learn
 
 🚀 How to Use
@@ -47,5 +50,7 @@ Formalyze is an AI-driven chat application built with Firebase for real-time dat
 ## 🔮 Future Improvements
 
 -Expand the LSTM model to detect different types of informal language (e.g., slang, abbreviations).
+
 -Implement additional notification features to alert users of informal language.
+
 -Create a mobile version of the application using React Native.
