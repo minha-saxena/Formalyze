@@ -46,6 +46,9 @@ Formalyze is an AI-driven chat application built with Firebase for real-time dat
   Registration: New users can sign up using the registration option, which stores their credentials securely in Firebase.
 6. Real-Time Messaging
   Start chatting in real-time once logged in. The system will automatically flag informal language based on the LSTM model, helping maintain professional communication.
+7. if you want to test the classifier, simply run the test_classifier.py file.
+8. if you want to train the classifier, you first need to download  glove.6b.100d text and the reddit folder (i'll add the google drive link)
+
 
 ## 🔮 Future Improvements
 
